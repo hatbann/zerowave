@@ -1,0 +1,299 @@
+/* ---------------CSS 초기화 ---------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*-------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: 'NanumBarunpen';
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.ttf') format("truetype");
+  font-display: swap;
+} 
+@font-face {
+  font-family: 'NanumBarunpen';
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.ttf') format("truetype");
+  font-display: swap;
+} 
+
+* 
+h1 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "NanumBarunpen";
+  text-align: center;
+  
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.password_description {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#find_email {
+  margin-top: 5px;
+  width: 550px;
+  height: 38px;
+  outline: none;
+  font-family: "NanumBarunpen";
+}
+
+span {
+  font-size: 15px;
+}
+.forgot_form {
+  margin: auto;
+  width: 600px;
+  border-radius: 5px;
+  padding: 340px;
+}
+#send_email {
+  display: inline-block;
+  min-width: 104px;
+  text-align: center;
+  padding: 12px 1.5rem 12px;
+  margin-top: 0.5px;
+  cursor: pointer;
+  position: relative;
+  background: #0475ff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  font-family: "NanumBarunpen";
+  font-size: 15px;
+}
+
+#send_email:hover{
+  background-color: #0360d2;
+}
+
+a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #0475ff;
+  font-weight: bold;
+}
+
+.emailaddress {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__background {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal__content {
+  text-align: center;
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+  top: 0;
+  padding: 40px 25px;
+  width: 200px;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*모바일사이즈*/
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 13px;
+  }
+  body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .password_description {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #find_email {
+    margin-top: 1px;
+    width: 250px;
+    height: 30px;
+  }
+  span {
+    font-size: 13px;
+  }
+  .forgot_form {
+    width: 100vw;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 240px 0 0 0;
+  }
+  .btn {
+    padding: 8px 1.5rem 8px;
+    margin-top: 0;
+  }
+}

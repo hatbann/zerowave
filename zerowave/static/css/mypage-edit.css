@@ -1,0 +1,350 @@
+/* ---------------CSS 초기화 ---------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------------------------------*/
+
+@font-face {
+  font-family: "NanumBarunpen";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Regular.ttf")
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NanumBarunpen";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/NanumBarunpen/NanumBarunpen-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "NanumBarunpen";
+}
+
+.item {
+  margin: auto;
+  width: 500px;
+  padding: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.in_email {
+  width: 282px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid black;
+  outline: none;
+}
+
+.in_pw1 {
+  width: 245px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid black;
+  outline: none;
+}
+
+.in_pw2 {
+  width: 208px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid black;
+  outline: none;
+}
+
+.in_name {
+  width: 300px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid black;
+  outline: none;
+}
+
+#editBtn {
+  width: 60px;
+  height: 40px;
+  background-color: #0475ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  color: white;
+  border: none;
+  margin-right: 5px;
+  margin-top: 10px;
+  font-family: "NanumBarunpen";
+  border-radius: 4px;
+}
+
+#editBtn:hover {
+  background-color: #0360d2;
+}
+
+.edit_cancel {
+
+}
+
+#email {
+  color: rgb(172, 170, 170);
+}
+
+input {
+  font-family: "NanumBarunpen";
+}
+
+#cancel {
+  font-weight: bold;
+  background-color: rgb(242, 242, 242);
+  border-radius: 4px;
+  font-family: "NanumBarunpen";
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 60px;
+  height: 40px;
+}
+
+#cancel:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+label {
+  font-weight: bold;
+}
+
+#edit-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#edit-form div{
+  width: 300px;
+}
+
+#edit-form input{
+  width: 300px;
+}
+
+
+/*모바일사이즈*/
+@media screen and (max-width: 700px) {
+  .item {
+    margin: auto;
+    width: 100vw;
+    padding: 300px 0;
+    text-align: center;
+  }
+  .in_email {
+    width: 290px;
+    margin-bottom: 5px;
+  }
+  .in_pw1 {
+    width: 290px;
+    margin-bottom: 5px;
+  }
+  .in_pw2 {
+    width: 290px;
+    margin-bottom: 5px;
+  }
+  .in_name {
+    width: 290px;
+  }
+  .edit_cancel {
+    margin: 0;
+  }
+  label {
+    font-size: 14px;
+  }
+
+  #edit-form {
+    width: 100vw;
+  }
+
+  #edit-form div label{
+    display: block;
+    width: 300px;
+    text-align: left;
+  }
+
+  #editBtn {
+    width: 60px;
+    height: 40px;
+    background-color: #0475ff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-family: "NanumBarunpen";
+    border-radius: 4px;
+  }
+
+  #cancel {
+    font-weight: bold;
+    background-color: rgb(242, 242, 242);
+    border-radius: 4px;
+    font-family: "NanumBarunpen";
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 60px;
+    height: 40px;
+  }
+  
+
+}
