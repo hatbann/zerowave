@@ -25,7 +25,7 @@
 
 ### 기술 스택
 
-| JavaScript | TypeScript |  React   |  Node   |
+| JavaScript | Html/Css |  Node   |  Kakao Map API   |
 | :--------: | :--------: | :------: | :-----: |
 |   ![js]    |   ![htmlCss]    | ![nodejs] | ![kakao] |
 
